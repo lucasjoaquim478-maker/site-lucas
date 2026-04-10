@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+}
+
+/* Tela inicial */
+#startScreen {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#startScreen h1 {
+    font-size: 50px;
+    color: #22c55e;
+}
+
+/* Conteúdo */
+header {
+    background: #1e293b;
+    padding: 20px;
+}
+
+.card {
+    background: #1e293b;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* Neon effect */
+h1 {
+    text-shadow: 0 0 10px #22c55e;
+}
