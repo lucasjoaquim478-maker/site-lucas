@@ -6,7 +6,6 @@ body {
     text-align: center;
 }
 
-/* Tela inicial */
 #startScreen {
     position: fixed;
     width: 100%;
@@ -23,7 +22,6 @@ body {
     color: #22c55e;
 }
 
-/* Conteúdo */
 header {
     background: #1e293b;
     padding: 20px;
@@ -37,7 +35,17 @@ header {
     border-radius: 10px;
 }
 
-/* Neon effect */
-h1 {
-    text-shadow: 0 0 10px #22c55e;
+#avatar {
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #22c55e;
+}
+
+button {
+    padding: 10px;
+    background: #22c55e;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
 }
