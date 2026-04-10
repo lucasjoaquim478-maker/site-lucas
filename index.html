@@ -7,32 +7,32 @@
 </head>
 <body>
 
-<!-- Tela inicial -->
 <div id="startScreen">
     <h1>Lucas Dev 🚀</h1>
     <p>Clique para entrar</p>
 </div>
 
-<!-- Conteúdo principal -->
-<div id="mainContent" style="display: none;">
+<div id="mainContent">
+
     <header>
+        <img id="avatar" src="">
         <h1>Lucas Dev</h1>
-        <p>Meu site profissional</p>
+        <p id="status">Carregando...</p>
     </header>
 
-    <section class="card">
-        <h2>Status (Discord)</h2>
-        <p id="status">Carregando status...</p>
-    </section>
+    <div class="card">
+        <h2>Música 🎵</h2>
+        <button onclick="toggleMusica()">Play / Pause</button>
+        <br><br>
+        <input type="range" min="0" max="1" step="0.1" onchange="mudarVolume(this.value)">
+        <br><br>
+        <button onclick="trocarMusica()">Trocar Música</button>
+    </div>
 
-    <section class="card">
-        <h2>Sobre</h2>
-        <p>Estou aprendendo programação, criando sites e jogos no Roblox 🚀</p>
-    </section>
 </div>
 
 <audio id="musica" loop>
-    <source src="musica.mp3" type="audio/mpeg">
+    <source src="audio/musica.mp3" type="audio/mpeg">
 </audio>
 
 <script src="script.js"></script>
